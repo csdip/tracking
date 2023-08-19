@@ -93,7 +93,6 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
 	z-index: 1;
 }
 
@@ -405,7 +404,7 @@ header .content .left p {
         display: flex;
         flex-direction: column;
         padding: 25px;
-        background-color: var(--Light-Grayish-Blue);
+        background-color: #fff;
         box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.2);
         transition: .3s;
         transform: translateX(-50%);
@@ -434,12 +433,12 @@ header .content .left p {
         display: block;
     }
     nav .main-menu .btn-login {
-        border-top: 1px solid var(--Grayish-Blue);
-        padding: 10px 0;
+        padding: 0px 0;
         margin-left: 0;
     }
     nav .main-menu .btn-login a{
-        border-radius: none;
+        border-top: 1px solid var(--Grayish-Blue);
+        padding: 10px 0;
     }
     nav .main-menu .btn-login::after {
         display: none;
@@ -483,6 +482,7 @@ header .content .left p {
     }
     header .content .left h1 {
         font-size: 34px;
+        padding-right: 60px;
     }
     header .content .left p{
         margin-bottom: 20px;
