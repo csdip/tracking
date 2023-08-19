@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Project tracking intro component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="row">
+                <div class="nav-wrapper">
+                    <div class="navbar">
+                        <a href="#" class="logo logo-desktop"><img src="img/logo.svg" alt="logo"></a>
+                        <button class="nav-btn"><span></span></button>
+                            <ul class="main-menu">
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li class="btn btn-login"><a href="#">Login</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <img src="img/shape.svg" alt="shape" class="shape">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="content">
+                        <div class="left">
+                            <div class="tag-container">
+                                <h5 class="tag">New</h5>
+                                <h5 class="tag-line">Monograph Dashboard</h5>
+                            </div>
+                            <h1>Powerful insights into your team</h1>
+                            <p>Project planning and time tracking for agile teams</p>
+                                <a href="#" class="btn">Schedule a demo</a>
+                                <span class="btn-span">to see a live preview</span>
+                        </div>
+                        <div class="right">
+                            <img src="img/illustration-devices.svg" alt="illustration-devices">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+<script type="text/javascript">
+    const body = document.querySelector('body')
+    const navBtn = document.querySelector('.nav-btn')
+    const mainMenu = document.querySelector('.main-menu')
+    const overlay = document.querySelector('.overlay')
+
+    navBtn.addEventListener('click', ()=>{
+        body.classList.toggle('nav-active')
+        navBtn.classList.toggle('active')
+        mainMenu.classList.toggle('active')
+        overlay.classList.toggle('active')
+    })
+</script>
+</html>
